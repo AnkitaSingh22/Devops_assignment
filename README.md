@@ -1,7 +1,11 @@
-# Devops_assignment
-Prerequisites
+# Devops_assignment : 
 
-Before starting this tutorial, you must install and configure the following tools and resources that you need to create and manage an Amazon EKS cluster.
+This solution is to deploy a highly-avaiable Elasticsearch (ES) cluster on Kubenetes cluster ( EKS) managed by Cloud provider AWS.
+
+
+**Prerequisites**
+
+Before starting this solution, you must install and configure the following tools and resources that you need to create and manage an Amazon EKS cluster.
 
 kubectl – A command line tool for working with Kubernetes clusters. This guide requires that you use version 1.21 or later. For more information, see Installing kubectl.
 
