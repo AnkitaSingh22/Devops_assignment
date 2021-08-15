@@ -20,3 +20,5 @@ Required IAM permissions – The IAM security principal that you're using must h
   Minimum cluster requirements include the following to run this chart with default settings. All of these settings are configurable.
   Three Kubernetes nodes to respect the default "hard" affinity settings
   1GB of RAM for the JVM heap
+
+### Getting started
