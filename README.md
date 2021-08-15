@@ -1,6 +1,6 @@
 ## Devops_assignment : 
 
-This solution is deploys a highly-avaiable ###'Elasticsearch (ES)' cluster on Kubenetes cluster ( EKS) managed by Cloud provider AWS standard helm charts publically available for Elastic search cluster.
+This solution is deploys a highly-avaiable Elasticsearch (ES) cluster on Kubenetes cluster ( EKS) managed by Cloud provider AWS standard helm charts publically available for Elastic search cluster.
 
 
 ###**Prerequisites**
