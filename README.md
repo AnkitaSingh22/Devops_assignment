@@ -3,7 +3,7 @@
 This solution is deploys a highly-avaiable [**Elasticsearch (ES)**](https://www.elastic.co/what-is/elasticsearch) cluster on [**Kubenetes cluster provided by Cloud provider AWS**](https://docs.aws.amazon.com/eks/latest/userguide/clusters.html) standard helm charts publically available for Elastic search cluster.
 
 
-###_Prerequisites_
+### _Prerequisites_
 
 1) To create Kuberenetes cluster 
 Before starting this solution, you must install and configure the following tools and resources that you need to create and manage an Amazon EKS cluster.
