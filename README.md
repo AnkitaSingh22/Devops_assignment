@@ -18,14 +18,16 @@ Before starting this solution, you must install and configure the following tool
 
 1) Installed eksctl using below commands :
 
+ ```
  curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
  sudo mv /tmp/eksctl /usr/local/bin
  eksctl version
+ ```
 
 2) Created Kubertnetes cluster named 'my-cluster' with 3 nodes as follows to make sure standard functionality of elasticsearch application :
 
- eksctl create cluster --name my-cluster --with-oidc --ssh-access --ssh-public-key esKeypair --managed --nodes 3
+ `eksctl create cluster --name my-cluster --with-oidc --ssh-access --ssh-public-key esKeypair --managed --nodes 3`
 
 3) Used kebernetes manifest file to deploy elasticserach cluster on my-cluster
   
-   kubectl apply -f elasticsearch-cluster.yaml
+   `kubectl apply -f elasticsearch-cluster.yaml`
