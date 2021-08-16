@@ -33,3 +33,11 @@ Before starting this solution, you must install and configure the following tool
 3) Used kebernetes manifest file to deploy elasticserach cluster on my-cluster
   
    `kubectl apply -f elasticsearch-cluster.yaml`
+
+After this we should have elasticsearch cluster deployed. We can check the resources deployed using below command :
+
+` kubectl get all`
+
+We can check the running ES cluster on local browser by forwarding the ports using below commands :
+
+`kubectl port-forward svc/elasticsearch-master 9200:9200`
