@@ -1,6 +1,6 @@
 ## Devops_assignment : 
 
-This solution is deploys a highly-avaiable [**Elasticsearch (ES)**](https://www.elastic.co/what-is/elasticsearch) cluster on [**Kubenetes cluster provided by Cloud provider AWS**](https://docs.aws.amazon.com/eks/latest/userguide/clusters.html).
+This solution is deploys a highly-available [**Elasticsearch (ES)**](https://www.elastic.co/what-is/elasticsearch) cluster on [**Kubenetes cluster provided by Cloud provider AWS**](https://docs.aws.amazon.com/eks/latest/userguide/clusters.html).
 
 
 ### _Prerequisites_
