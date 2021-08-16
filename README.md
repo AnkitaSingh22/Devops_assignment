@@ -82,6 +82,6 @@ You should see something like this in the browser :
 }
 ````````````````
 
-### Conclusion 
+### _Conclusion_ 
 
 This is a simplistic approach to deploy elaticsearch cluster suitable for lighter workload and can be tuned based on the requirement.
