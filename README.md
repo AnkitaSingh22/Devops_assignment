@@ -28,7 +28,7 @@ Before starting this solution, you must install and configure the following tool
 
  `eksctl create cluster --name my-cluster --with-oidc --ssh-access --ssh-public-key esKeypair --managed --nodes 3`
  
- Note : Keep a ssh paublic-key pair ready to connect with AWS nodes after cluster is created. In this case "esKeypair" is used.
+ Note : Keep a ssh public [key-pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#prepare-key-pair) ready to connect with AWS nodes after cluster is created. In this case "esKeypair" is used.
 
 3) Used kebernetes manifest file to deploy elasticserach cluster on my-cluster
   
