@@ -27,6 +27,8 @@ Before starting this solution, you must install and configure the following tool
 2) Created Kubertnetes cluster named 'my-cluster' with 3 nodes as follows to make sure standard functionality of elasticsearch application :
 
  `eksctl create cluster --name my-cluster --with-oidc --ssh-access --ssh-public-key esKeypair --managed --nodes 3`
+ 
+ Note : Keep a ssh paublic-key pair ready to connect with AWS nodes after cluster is created. In this case "esKeypair" is used.
 
 3) Used kebernetes manifest file to deploy elasticserach cluster on my-cluster
   
