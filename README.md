@@ -38,6 +38,50 @@ After this we should have elasticsearch cluster deployed. We can check the resou
 
 ` kubectl get all`
 
+Output :
+
+`````````````
+NAME                         READY   STATUS    RESTARTS   AGE
+pod/elasticsearch-master-0   1/1     Running   0          6h39m
+pod/elasticsearch-master-1   1/1     Running   0          6h20m
+pod/elasticsearch-master-2   1/1     Running   0          6h39m
+
+NAME                                    TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)             AGE
+service/elasticsearch-master            ClusterIP   10.100.22.136   <none>        9200/TCP,9300/TCP   6h39m
+service/elasticsearch-master-headless   ClusterIP   None            <none>        9200/TCP,9300/TCP   6h39m
+service/kubernetes                      ClusterIP   10.100.0.1      <none>        443/TCP             42h
+
+NAME                                    READY   AGE
+statefulset.apps/elasticsearch-master   3/3     6h39m
+
+`````````````
+
 We can check the running ES cluster on local browser by forwarding the ports using below commands :
 
 `kubectl port-forward svc/elasticsearch-master 9200:9200`
+
+You should see something like this in the browser :
+
+````````````````
+{
+  "name" : "elasticsearch-master-2",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "OzdNpENqSE-OGsq2JQIOyQ",
+  "version" : {
+    "number" : "7.14.0",
+    "build_flavor" : "default",
+    "build_type" : "docker",
+    "build_hash" : "dd5a0a2acaa2045ff9624f3729fc8a6f40835aa1",
+    "build_date" : "2021-07-29T20:49:32.864135063Z",
+    "build_snapshot" : false,
+    "lucene_version" : "8.9.0",
+    "minimum_wire_compatibility_version" : "6.8.0",
+    "minimum_index_compatibility_version" : "6.0.0-beta1"
+  },
+  "tagline" : "You Know, for Search"
+}
+````````````````
+
+### Conclusion 
+
+This is a simplistic approach to deploy elaticsearch cluster suitable for lighter workload and can be tuned based on the requirement.
