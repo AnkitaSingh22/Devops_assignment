@@ -8,7 +8,7 @@ This solution deploys a highly-available [**Elasticsearch (ES)**](https://www.el
 #### To create Kuberenetes cluster 
 Before starting this solution, you must install and configure the following tools and resources that you need to create and manage an Amazon EKS cluster.
 
-**kubectl** – A command line tool for working with Kubernetes clusters. This guide requires that you use version 1.21 or later. For more information, see [Installing kubectl](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html).
+**kubectl** – A command line tool to work with Kubernetes clusters. This guide requires that you use version 1.21 or later. For more information, see [Installing kubectl](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html).
 
 **eksctl** – A command line tool for working with EKS clusters that automates many individual tasks. This guide requires that you use version 0.61.0 or later. For more information, see [The eksctl command line utility](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html).
 
