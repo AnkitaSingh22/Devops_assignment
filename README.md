@@ -31,3 +31,7 @@ Before starting this solution, you must install and configure the following tool
 3) Used kebernetes manifest file to deploy elasticserach cluster on my-cluster
   
    `kubectl apply -f elasticsearch-cluster.yaml`
+
+### Conclusion 
+
+This is a simplistic approach to deploy elaticsearch cluster suitable for lighter workload and can be tuned based on the requirement.
